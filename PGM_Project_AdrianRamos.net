@@ -1,0 +1,258 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@c6f5d46";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@17a5b798";
+	node_size = (130 55);
+}
+
+node ABV
+{
+	states = ("state0" "state1" );
+	position = (25 1);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "ABV";
+	excludepolicy = "include whole CPT";
+}
+node MaxIBU
+{
+	states = ("state0" "state1" );
+	position = (796 43);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable3";
+	label = "MaxIBU";
+	excludepolicy = "include whole CPT";
+}
+node MinIBU
+{
+	states = ("state0" "state1" );
+	position = (607 11);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable2";
+	label = "MinIBU";
+	excludepolicy = "include whole CPT";
+}
+node Astringency
+{
+	states = ("state0" "state1" );
+	position = (25 -293);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable4";
+	label = "Astringency";
+	excludepolicy = "include whole CPT";
+}
+node Malty
+{
+	states = ("state0" "state1" );
+	position = (283 -156);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable14";
+	label = "Malty";
+	excludepolicy = "include whole CPT";
+}
+node Biiter
+{
+	states = ("state0" "state1" );
+	position = (698 -59);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable7";
+	label = "Bitter";
+	excludepolicy = "include whole CPT";
+}
+node Hoppy
+{
+	states = ("state0" "state1" );
+	position = (698 -154);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable12";
+	label = "Hoppy";
+	excludepolicy = "include whole CPT";
+}
+node Alcohol
+{
+	states = ("state0" "state1" );
+	position = (153 -55);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable6";
+	label = "Alcohol";
+	excludepolicy = "include whole CPT";
+}
+node Sweet
+{
+	states = ("state0" "state1" );
+	position = (283 -379);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable8";
+	label = "Sweet";
+	excludepolicy = "include whole CPT";
+}
+node Spices
+{
+	states = ("state0" "state1" );
+	position = (475 -9);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable13";
+	label = "Spices";
+	excludepolicy = "include whole CPT";
+}
+node Style
+{
+	states = ("state0" "state1" );
+	position = (283 45);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "Style";
+	excludepolicy = "include whole CPT";
+}
+node Body
+{
+	states = ("state0" "state1" );
+	position = (198 -245);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable5";
+	label = "Body";
+	excludepolicy = "include whole CPT";
+}
+node Sour
+{
+	states = ("state0" "state1" );
+	position = (474 -159);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable9";
+	label = "Sour";
+	excludepolicy = "include whole CPT";
+}
+node Fruits
+{
+	states = ("state0" "state1" );
+	position = (698 -260);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable11";
+	label = "Fruits";
+	excludepolicy = "include whole CPT";
+}
+node Salty
+{
+	states = ("state0" "state1" );
+	position = (395 -214);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable10";
+	label = "Salty";
+	excludepolicy = "include whole CPT";
+}
+potential ( ABV | Style )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
+potential ( MaxIBU | Style )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
+potential ( MinIBU | Style )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
+potential ( Astringency | ABV )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
+potential ( Malty | Style )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
+potential ( Biiter | MinIBU MaxIBU )
+{
+	data = (((	0.5	0.5	)
+		(	0.5	0.5	))
+		((	0.5	0.5	)
+		(	0.5	0.5	)));
+}
+potential ( Hoppy | Style Biiter )
+{
+	data = (((	0.5	0.5	)
+		(	0.5	0.5	))
+		((	0.5	0.5	)
+		(	0.5	0.5	)));
+}
+potential ( Alcohol | ABV )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
+potential ( Sweet | Malty )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
+potential ( Spices | Style )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
+potential ( Style | )
+{
+	data = (	0.5	0.5	);
+}
+potential ( Body | ABV Style Malty )
+{
+	data = ((((	0.5	0.5	)
+		(	0.5	0.5	))
+		((	0.5	0.5	)
+		(	0.5	0.5	)))
+		(((	0.5	0.5	)
+		(	0.5	0.5	))
+		((	0.5	0.5	)
+		(	0.5	0.5	))));
+}
+potential ( Sour | Style )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
+potential ( Fruits | Style Hoppy )
+{
+	data = (((	0.5	0.5	)
+		(	0.5	0.5	))
+		((	0.5	0.5	)
+		(	0.5	0.5	)));
+}
+potential ( Salty | Style )
+{
+	data = ((	0.5	0.5	)
+		(	0.5	0.5	));
+}
